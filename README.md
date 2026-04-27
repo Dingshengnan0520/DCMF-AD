@@ -40,16 +40,13 @@ wandb
 
 If PyTorch cannot be installed directly through pip, please install the CUDA version from the official PyTorch website.
 
-# 2. Dataset
+2. Dataset
 
 This project uses the MVTec 3D-AD dataset.
 
 Dataset download link:
-
 https://www.mvtec.com/research-teaching/datasets/mvtec-3d-ad
-
 After downloading, organize the dataset as follows:
-
 datasets/
 └── mvtec_3d_anomaly_detection/
     ├── bagel/
