@@ -39,7 +39,7 @@ Pillow
 wandb
 
 If PyTorch cannot be installed directly through pip, please install the CUDA version from the official PyTorch website.
-
+```
 ## 2. Dataset
 
 This project uses the MVTec 3D-AD dataset.
@@ -66,10 +66,10 @@ Supported categories:
 
 bagel, cable_gland, carrot, cookie, dowel, foam, peach, potato, rope, tire
 ```
-3. Project Structure
+## 3. Project Structure
 
 Recommended file structure:
-
+```bash
 DCMF-AD/
 ├── train.py
 ├── test.py
@@ -88,7 +88,8 @@ DCMF-AD/
 ├── checkpoints_CFM_mvtec/
 ├── requirements.txt
 └── README.md
-4. Training
+```
+## 4. Training
 
 Run the following command to train the model on one category:
 
