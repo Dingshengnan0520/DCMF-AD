@@ -11,7 +11,7 @@ The framework mainly contains:
 - Learnable adaptive fusion layer (LAFL)
 - Lightweight local detection head (LDH)
 
-## 1. Environment
+# 1. Environment
 
 The code was tested with the following environment:
 
@@ -40,7 +40,7 @@ wandb
 
 If PyTorch cannot be installed directly through pip, please install the CUDA version from the official PyTorch website.
 
-2. Dataset
+# 2. Dataset
 
 This project uses the MVTec 3D-AD dataset.
 
