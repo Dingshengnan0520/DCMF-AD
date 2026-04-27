@@ -92,7 +92,7 @@ DCMF-AD/
 ## 4. Training
 
 Run the following command to train the model on one category:
-
+```bash
 python train.py \
   --dataset_path ./datasets/mvtec_3d_anomaly_detection \
   --checkpoint_savepath ./checkpoints_CFM_mvtec \
@@ -127,10 +127,11 @@ checkpoints_CFM_mvtec/
     ├── JointDet_foam_50ep_4bs.pth
     ├── training_steps_foam_50ep_4bs.csv
     └── training_epochs_foam_50ep_4bs.csv
-5. Testing
+```
+## 5. Testing
 
 After training, run inference with:
-
+```bash
 python test.py \
   --dataset_path ./datasets/mvtec_3d_anomaly_detection \
   --checkpoint_folder ./checkpoints_CFM_mvtec \
@@ -139,8 +140,9 @@ python test.py \
   --batch_size 4
 
 The testing script loads the trained CFM modules, FusionLayer, and JointDet. It then generates anomaly maps and computes evaluation metrics.
-
-6. Output Results
+```
+## 6. Output Results
+```bash
 Quantitative results
 
 The quantitative results are saved in:
@@ -174,7 +176,9 @@ Depth map
 3D cosine anomaly response
 Fused anomaly map
 Final detection result
-7. Important Notes
+```
+## 7. Important Notes
+```bash
 Make sure the dataset path is correct.
 If the following error occurs:
 ValueError: num_samples should be a positive integer value, but got num_samples=0
@@ -193,8 +197,8 @@ then testing should also use:
 --class_name foam --epochs_no 50 --batch_size 4
 
 Otherwise, the checkpoint file names may not match.
-
-8. Citation
+```
+## 8. Citation
 
 If this repository is useful for your research, please cite our paper:
 
@@ -204,3 +208,4 @@ If this repository is useful for your research, please cite our paper:
   journal={},
   year={2026}
 }
+```
